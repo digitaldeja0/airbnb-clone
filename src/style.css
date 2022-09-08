@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     margin: 0;
     height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
 }
 .nav{
     background-color: black;
@@ -13,9 +16,6 @@ body{
     margin-left: 40px;
 }
 
-.hero{
-    height: 20vh;
-}
 
 .heroImgDiv{
     width: 100%;
@@ -27,10 +27,94 @@ body{
     object-fit: cover;
 }
 .heroTextDiv{
-    max-width: 1000px;
+    width: 90%;
+    max-width: 900px;
     margin: 0 auto;
 
 }
-.heroTextDiv >*{
-    margin: 20px auto;
+
+/* listingItemsSection Start */
+.listingItemsSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+   
 }
+.listingItemsSectionDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    flex-grow: 1; */
+    
+}
+/* listingItemsSection End */
+
+/* Listing Card Start */
+
+.listingCard{
+    width: 300px;
+    margin: 10px;
+    flex-shrink: 1;
+ 
+}
+
+.listingCardImgDiv{
+    width: 100%;
+}
+.listingCardImg{
+    width: 100%;
+    object-fit: cover;
+}
+
+.listingCardText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.listingCardTextDiv1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.listingCardTitle,.listingCardRating,.listingCardLocation{
+    margin: 0;
+}
+
+.listingCardTitle{
+    font-weight: bold;
+}
+.listingCardLocation{
+    font-style: italic;
+    font-size: 0.8rem;
+}
+.ratingNumberSpan{
+    color: rgb(40, 83, 185);
+    font-weight: bold;
+}
+
+/* Listing Card End */
+
+/* Media Q Start */
+@media only screen and (max-width: 642px) {
+    
+    .listingCard{
+     width: 80%;
+    }
+   }
+@media only screen and (max-width: 500px) {
+    
+   .listingCard{
+    width: 100%;
+   }
+  }
+/* Media Q End */
